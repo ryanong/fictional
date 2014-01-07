@@ -1,6 +1,6 @@
 # Fictional
 
-TODO: Write a gem description
+Simply create fake relational data.
 
 ## Installation
 
@@ -18,7 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+'''ruby
+require 'fictional'
+
+Fictional::Person.first_name #=> "John"
+
+person = Fictional.person 
+person.first_name #=> "John"
+person.email #=> "john.smith@example.com"
+
+person.first_name = "Jane"
+person.email #=> "jane.smith@example.com"
+
+person.phone_number #=> "718-631-1111"
+person.full_address #=> "31 Beverly Rd, Douglaston, NY 11363, USA"
+'''
 
 ## Contributing
 

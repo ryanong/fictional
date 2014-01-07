@@ -1,4 +1,4 @@
 require 'fictional'
-require 'minitest/unit'
+gem 'minitest'
 require 'minitest/autorun'
 require 'spy'
