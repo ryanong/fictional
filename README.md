@@ -30,7 +30,7 @@ person.email #=> "john.smith@example.com"
 person.first_name = "Jane"
 person.email #=> "jane.smith@example.com"
 
-person.phone_number #=> "718-631-1111"
+person.phone.number #=> "718-631-1111"
 person.full_address #=> "31 Beverly Rd, Douglaston, NY 11363, USA"
 '''
 
