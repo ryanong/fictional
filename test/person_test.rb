@@ -24,9 +24,16 @@ class PersonTest < Minitest::Test
   def test_built_email
     assert person1 = Fictional::Person.build
     assert person1.email
+    assert_equal person1.email, person1.email
   end
   
   def test_phone_number
     assert_match /\A\d{3}-\d{3}-\d{4}\Z/, Fictional::Person.phone_number
+  end
+
+  def test_built_email
+    assert person1 = Fictional::Person.build
+    assert person1.phone_number
+    assert_equal person1.phone_number, person1.phone_number
   end
 end
